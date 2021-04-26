@@ -1,5 +1,5 @@
 <?php 
-include("../controller/header.php");
+include("../view/header.php");
 if(isset($_POST['update_details'])) {
 
 	$first_name = $_POST['first_name'];
@@ -66,7 +66,7 @@ else {
 
 
 if(isset($_POST['close_account'])) {
-		header("Location: ../controller/close_account.php");
+		header("Location: ../view/close_account.php");
 }
 	$user_data_query = mysqli_query($con, "SELECT first_name, last_name, email FROM users WHERE username='$userLoggedIn'");
 	$row = mysqli_fetch_array($user_data_query);

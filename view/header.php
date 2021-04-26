@@ -1,9 +1,9 @@
 
 <?php
 	require '../config/config.php';
-	include("../model/User.php");
-	include("../model/Post.php");
-	include("../model/Message.php");
+	include("../controller/User.php");
+	include("../controller/Post.php");
+	include("../controller/Message.php");
 	include("../model/loginchecker.php");			// to check if the user is logged in
 ?>
 
@@ -12,15 +12,15 @@
 <head>
 	<title>Start Being Social!</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="../view/js/boosstrap.js"></script>
-	<script src="../view/js/bootbox.min.js"></script>
-	<script src="../view/js/Social.js"></script>
+	<script src="../assests/js/boosstrap.js"></script>
+	<script src="../assests/js/bootbox.min.js"></script>
+	<script src="../assests/js/Social.js"></script>
 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">      </script>    
 	
 	<link rel = "stylesheet" href = " //maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel = "stylesheet" type = "text/css" href = "../view/bootstrap.css">
-	<link rel = "stylesheet" type = "text/css" href = "../view/style.css">
+	<link rel = "stylesheet" type = "text/css" href = "../assests/bootstrap.css">
+	<link rel = "stylesheet" type = "text/css" href = "../assests/style.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
 	
@@ -29,7 +29,7 @@
 
 <div class = "top_bar">
 	<div class = "logo">		
-		<a href = "index.php"><img src = "../view/images/logo.png"   width=150" height="70"></a>
+		<a href = "index.php"><img src = "../assests/images/logo.png"   width=150" height="70"></a>
 	</div>
 	<div class="search">
 
@@ -37,7 +37,7 @@
 				<input type="text" onkeyup="getLiveSearchUsers(this.value, '<?php echo $userLoggedIn; ?>')" name="q" placeholder="Search..." autocomplete="off" id="search_text_input">
 
 				<div class="button_holder">
-					<img src="../view/images/icons/magnifying_glass.png">
+					<img src="../assests/images/icons/magnifying_glass.png">
 				</div>
 
 			</form>

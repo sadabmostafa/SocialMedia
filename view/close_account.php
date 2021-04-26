@@ -6,7 +6,7 @@ if(isset($_POST['cancel'])) {
 }
 
 if(isset($_POST['close_account'])) {
-	include("close.php");
+	include("../model/close.php");
 	
 	header("Location: register.php");
 }

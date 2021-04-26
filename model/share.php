@@ -20,8 +20,8 @@
 	<?php  
 	
 	require '../config/config.php';
-	include("User.php");
-	include("Post.php");
+	include("../controller/User.php");
+	include("../controller/Post.php");
 	
 	if (isset($_SESSION['username'])) {
 		$userLoggedIn = $_SESSION['username'];
@@ -29,7 +29,7 @@
 		$user = mysqli_fetch_array($user_details_query);
 	}
 	else {
-			header("Location: ../controller/register.php");
+			header("Location: ../view/register.php");
 	}
 
 	//Get id of post
@@ -56,7 +56,7 @@
 	}
 	if($x == false){
 		$x=true;
-			header("Location: ../controller/index.php");
+			header("Location: ../view/index.php");
 	}
 
 

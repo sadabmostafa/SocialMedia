@@ -1,6 +1,6 @@
 <?php
 include("../config/config.php");
-include("../User.php");
+include("../controller/User.php");
 
 $query = $_POST['query'];
 $userLoggedIn = $_POST['userLoggedIn'];

@@ -15,12 +15,12 @@ $user_from = $row['user_from'];
 
 				$delete_query = mysqli_query($con, "DELETE FROM friend_requests WHERE user_to='$userLoggedIn' AND user_from='$user_from'");
 				echo "You are now friends!";
-				header("Location: requests.php");
+				header("Location: ../view/requests.php");
 			}
 
 			if(isset($_POST['ignore_request' . $user_from ])) {
 				$delete_query = mysqli_query($con, "DELETE FROM friend_requests WHERE user_to='$userLoggedIn' AND user_from='$user_from'");
 				echo "Request ignored!";
-				header("Location: requests.php");
+				header("Location: ../view/requests.php");
 			}
 ?>

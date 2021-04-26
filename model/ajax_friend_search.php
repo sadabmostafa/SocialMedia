@@ -1,6 +1,6 @@
 <?php  
 include("../config/config.php");
-include("User.php");
+include("../controller/User.php");
 
 $query = $_POST['query'];
 $userLoggedIn = $_POST['userLoggedIn'];
@@ -30,7 +30,7 @@ if($query != "") {
 
 		if($user->isFriend($row['username'])) {
 			echo "<div class='resultDisplay'>
-					<a href='../controller/messages.php?u=" . $row['username'] . "' style='color: #000'>
+					<a href='../view/messages.php?u=" . $row['username'] . "' style='color: #000'>
 						<div class='liveSearchProfilePic'>
 							<img src='". $row['profile_pic'] . "'>
 						</div>

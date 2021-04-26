@@ -8,9 +8,9 @@ include("../model/reg_logic.php");
 <html>
 <head>
 	<title>BeSocial</title>
-	<link rel = "stylesheet" type = "text/css" href = "../view/register_er_style.css" >
+	<link rel = "stylesheet" type = "text/css" href = "../assests/register_er_style.css" >
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="../view/js/register.js"></script>
+	<script src="../assests/js/register.js"></script>
 </head>
 <body>
 	<div class = "wrapper"> 

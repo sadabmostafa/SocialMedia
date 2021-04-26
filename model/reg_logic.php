@@ -122,7 +122,7 @@
 			//}
 			
 			$_SESSION['username'] = $username; //if its null then no user is logged in_array
-			header("Location: index.php");
+			header("Location: ../view/index.php");
 			exit();
 			
 		}

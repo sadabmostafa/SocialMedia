@@ -1,7 +1,7 @@
 <?php
 require '../config/config.php';
-	include("User.php");
-	include("Post.php");
+	include("../controller/User.php");
+	include("../controller/Post.php");
 
 	if (isset($_SESSION['username'])) {
 		$userLoggedIn = $_SESSION['username'];
@@ -9,7 +9,7 @@ require '../config/config.php';
 		$user = mysqli_fetch_array($user_details_query);
 	}
 	else {
-		header("Location: ../controller/register.php");
+		header("Location: ../view/register.php");
 	}
 
 ?>
@@ -100,7 +100,7 @@ require '../config/config.php';
 			if(isset($_POST['view_notification' . $user_from ])) {
 
 				$delete_query = mysqli_query($con, "DELETE FROM notification WHERE user_to='$user_to' AND user_from='$user_from'");
-				header("Location: ../controller/requests.php");
+				header("Location: ../view/requests.php");
 			}
 			}
 			else{
@@ -111,7 +111,7 @@ require '../config/config.php';
 			if(isset($_POST['view_notification' . $user_from ])) {
 
 				$delete_query = mysqli_query($con, "DELETE FROM notification WHERE user_to='$user_to' AND user_from='$user_from'");
-				header("Location: ../controller/index.php");
+				header("Location: ../view/index.php");
 			}
 			}
 			?>
