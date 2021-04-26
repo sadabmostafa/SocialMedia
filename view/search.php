@@ -1,6 +1,6 @@
 <?php
 
-include("searchcontroller.php");
+include("../controller/searchcontroller.php");
 
 
 
