@@ -91,9 +91,9 @@
 			$rand = rand(1,2);
 			
 			if($rand == 1 )
-				$profile_pic = "../view/images/profile_pics/defaults/one.jpg";
+				$profile_pic = "../assests/images/profile_pics/defaults/one.jpg";
 			else if($rand == 2 )
-				$profile_pic = "../view/images/profile_pics/defaults/two.jpg";
+				$profile_pic = "../assests/images/profile_pics/defaults/two.jpg";
 			
 			$query = mysqli_query($con, "INSERT INTO users VALUES ('' , '$fname' , '$lname' , '$username', '$em' , '$password', '$date' , '$profile_pic' , '0','0','no',',')");
 			array_push($error_array, "<span style  = 'color: #14c800';> You are all set! now you can log in </span><br>");
